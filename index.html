@@ -100,7 +100,7 @@
                         <div class="layer">
                             <h3>Inventory System</h3>
                             <p>A showcase of a Roblox inventory system</p>
-                            <a target="_blank" href="https://youtu.be/AtLRpkv2BVY"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <a target="_blank" href="https://youtu.be/PaXRfzuPhh8"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                         </div>
                     </div>
                     <div class="work">
@@ -112,7 +112,7 @@
                         </div>
                     </div>
                 </div>
-                <a target="_blank" href="https://www.youtube.com/@devcatxkdb" class="btn">See More</a>
+                <a target="_blank" href="https://www.youtube.com/@bob30002" class="btn">See More</a>
             </div>
         </div>
         <div id="contact">
@@ -121,19 +121,8 @@
                     <div class="contact-left">
                         <h1 class="sub-title">Contact Me</h1>
                         <p><i class="fa-solid fa-address-book"></i>Discord Contact: joob#5896</p>
-                        <div class="social-icons">
-                            <a target="_blank" href="https://www.roblox.com/users/1597882185/profile"><i class="fa-solid fa-user"></i></a>
-                            <a target="_blank" href="https://devforum.roblox.com/u/catxkdb/"><i class="fa-solid fa-comment"></i></a>
-                        </div>
-                    </div>
-                    <div class="contact-right">
-                        <form name="submit-to-google-sheet">
-                            <input type="text" name="Name" placeholder="Your Name/Username" required>
-                            <input type="text" name="Email" placeholder="Contact (Email, Discord, etc)" required>
-                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                            <button type="submit" class="btn btn2">Submit</button>
-                        </form>
-                        <span id="msg"></span>
+                        <p><i class="fa-solid fa-user"></i>Roblox Profile: <a target="_blank" href="https://www.roblox.com/users/1597882185/profile">Link</a></p>
+                        <p><i class="fa-solid fa-comment"></i>Devforum Profile: <a target="_blank" href="https://devforum.roblox.com/u/catxkdb/">Link</a></p>
                     </div>
                 </div>
             </div>
@@ -163,23 +152,5 @@
                 sidemeu.style.right = "-200px";
             }
         </script>
-        <script>
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbyEqUCnYWxxrnnxGUswRqNWCOLM2Vr6WysTf3jLtgOMz6Z123i_nbt4iZOqNlkqehhR/exec'
-            const form = document.forms['submit-to-google-sheet']
-            const msg = document.getElementById("msg")
-          
-            form.addEventListener('submit', e => {
-              e.preventDefault()
-              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => {
-                    msg.innerHTML = "Message sent successfully"
-                    setTimeout(function(){
-                        msg.innerHTML = ""
-                    }, 5000)
-                    form.reset()
-                })
-                .catch(error => console.error('Error!', error.message))
-            })
-          </script>
     </body>
 </html>
