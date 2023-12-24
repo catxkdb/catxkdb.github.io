@@ -240,9 +240,6 @@ nav ul li a:hover::after {
 .contact-left {
     flex-basis: 35%;   
 }
-.contact-right {
-    flex-basis: 60%;   
-}
 .contact-left p {
     margin-top: 30px;
 }
@@ -251,27 +248,15 @@ nav ul li a:hover::after {
     margin-right: 15px;
     font-size: 25px;
 }
-.social-icons {
-    margin-top: 30px;
-}
-.social-icons a {
-    text-decoration: none;
-    font-size: 30px;
-    margin-right: 15px;
-    color: #ababab;
-    display: inline-block;
-    transition: transform 0.5s;
-}
-.social-icons a:hover {
+.contact-left p a {
     color: #0095ff;
-    transform: translateY(-5px);
+}
+.contact-left:last-child {
+    margin-bottom: 30px;
 }
 .btn.btn2 {
     display: inline-block;
     background: #0095ff;
-}
-.contact-right form {
-    width: 100%;
 }
 form input, form textarea {
     width: 100%;
@@ -354,7 +339,7 @@ nav .fas {
         font-size: 16px;
         margin-right: 20px;
     }
-    .contact-left, .contact-right {
+    .contact-left {
         flex-basis: 100%;
     }
 }
